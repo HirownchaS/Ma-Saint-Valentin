@@ -101,17 +101,13 @@ const Home = () => {
 
   const loveLetterContent = `To the one who holds my heart,
 
-From the very first moment our eyes met, I knew my life would never be the same. You walked into my world like a gentle breeze, and suddenly everything felt right.
+From the moment we met, my world changed. Your smile is my sunshine, your laughter my favorite sound, and your love my greatest gift.
 
-Every morning I wake up grateful that you exist. Your smile is my sunrise, your laughter is my favorite melody, and your love... your love is the most precious gift I have ever received.
+You see me, stand by me, and make every moment feel special. I don’t need anything more than you — your presence is my peace.
 
-You see me — truly see me — in ways no one else ever has. You hold my hand through storms and dance with me in the rain. You make ordinary moments feel extraordinary, and I fall deeper in love with you every single day.
+Thank you for being my home, my heart, and my forever. I promise to love you more with every passing day.
 
-I don't need grand gestures or perfect words. I just need you — your warmth, your presence, your heart beating next to mine.
-
-Thank you for loving me the way you do. Thank you for being my home, my peace, my forever. I promise to cherish you, to protect your heart, and to love you more than yesterday but less than tomorrow.
-
-You are my everything. Today, tomorrow, and always.`;
+Always yours. 💕`;
 
   // Generate bokeh particles
   const bokehParticles = useMemo<Particle[]>(() => {
