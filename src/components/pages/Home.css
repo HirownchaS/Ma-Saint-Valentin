@@ -1,5 +1,3 @@
-/* src/pages/Home.css - Valentine Theme Optimized */
-
 /* ===== CONTAINER ===== */
 .valentines-container {
   min-height: 100vh;
@@ -13,6 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 /* Memories mode - allow scrolling on mobile */
