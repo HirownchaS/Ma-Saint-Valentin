@@ -237,58 +237,76 @@ You are my everything. Today, tomorrow, and always.`;
 
             <p className="memories-subtitle">Every moment with you is a treasure 💕</p>
 
-            {/* Memories gallery with mock data */}
+            {/* Memories gallery with photos */}
             <div className="memories-gallery">
-              <div className="memory-card">
-                <div className="memory-icon">☕</div>
+              {/* Memory 1 - First Coffee Date */}
+              <div className="memory-card memory-photo-card">
+                <div className="memory-photo memory-photo-1">
+                  <div className="photo-overlay">☕</div>
+                </div>
                 <h3 className="memory-title">Our First Coffee Date</h3>
                 <p className="memory-date">March 15, 2024</p>
-                <p className="memory-description">
+                <p className="memory-caption">
                   That little café where we talked for hours... I knew right then you were special.
                 </p>
               </div>
 
-              <div className="memory-card">
-                <div className="memory-icon">🌅</div>
+              {/* Memory 2 - Sunset at the Beach */}
+              <div className="memory-card memory-photo-card">
+                <div className="memory-photo memory-photo-2">
+                  <div className="photo-overlay">🌅</div>
+                </div>
                 <h3 className="memory-title">Sunset at the Beach</h3>
                 <p className="memory-date">June 8, 2024</p>
-                <p className="memory-description">
+                <p className="memory-caption">
                   Watching the sun dip into the ocean, your hand in mine. Pure magic.
                 </p>
               </div>
 
-              <div className="memory-card">
-                <div className="memory-icon">🎂</div>
+              {/* Memory 3 - Birthday Surprise */}
+              <div className="memory-card memory-photo-card">
+                <div className="memory-photo memory-photo-3">
+                  <div className="photo-overlay">🎂</div>
+                </div>
                 <h3 className="memory-title">Your Birthday Surprise</h3>
                 <p className="memory-date">August 22, 2024</p>
-                <p className="memory-description">
+                <p className="memory-caption">
                   The look on your face when you saw the balloons — I'll treasure it forever.
                 </p>
               </div>
 
-              <div className="memory-card">
-                <div className="memory-icon">🌧️</div>
+              {/* Memory 4 - Dancing in the Rain */}
+              <div className="memory-card memory-photo-card">
+                <div className="memory-photo memory-photo-4">
+                  <div className="photo-overlay">🌧️</div>
+                </div>
                 <h3 className="memory-title">Dancing in the Rain</h3>
                 <p className="memory-date">September 3, 2024</p>
-                <p className="memory-description">
+                <p className="memory-caption">
                   We got completely soaked, but your laughter made it the best day ever.
                 </p>
               </div>
 
-              <div className="memory-card">
-                <div className="memory-icon">🎄</div>
+              {/* Memory 5 - First Christmas */}
+              <div className="memory-card memory-photo-card">
+                <div className="memory-photo memory-photo-5">
+                  <div className="photo-overlay">🎄</div>
+                </div>
                 <h3 className="memory-title">Our First Christmas</h3>
                 <p className="memory-date">December 25, 2024</p>
-                <p className="memory-description">
+                <p className="memory-caption">
                   Hot cocoa, warm blankets, and your head on my shoulder. Perfect.
                 </p>
               </div>
 
-              <div className="memory-card">
-                <div className="memory-icon">✨</div>
+              {/* Memory 6 - New Year's Kiss */}
+              <div className="memory-card memory-photo-card">
+                <div className="memory-photo memory-photo-6">
+                  <div className="photo-overlay">✨</div>
+                </div>
                 <h3 className="memory-title">New Year's Kiss</h3>
                 <p className="memory-date">January 1, 2025</p>
-                <p className="memory-description">
+                <p className="memory-caption">
                   Starting a new year with you in my arms — my greatest blessing.
                 </p>
               </div>
