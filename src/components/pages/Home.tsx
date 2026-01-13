@@ -101,13 +101,9 @@ const Home = () => {
 
   const loveLetterContent = `To the one who holds my heart,
 
-From the moment we met, my world changed. Your smile is my sunshine, your laughter my favorite sound, and your love my greatest gift.
+Your love is my greatest gift. You see me, stand by me, and make every moment special. I promise to love you more each day.
 
-You see me, stand by me, and make every moment feel special. I don’t need anything more than you — your presence is my peace.
-
-Thank you for being my home, my heart, and my forever. I promise to love you more with every passing day.
-
-Always yours. 💕`;
+Always yours. 💖`;
 
   // Generate bokeh particles
   const bokehParticles = useMemo<Particle[]>(() => {
@@ -322,7 +318,7 @@ Always yours. 💕`;
               {/* Signature appears after typing */}
               <div className={`letter-signature ${showSignature ? 'visible' : ''}`}>
                 <p className="closing">With all my love,</p>
-                <p className="signature-name">[Your Name] 💕</p>
+                <p className="signature-name">Your Name 💕</p>
                 <p className="date">Valentine's Day 2026</p>
               </div>
             </div>
@@ -336,7 +332,7 @@ Always yours. 💕`;
                 className={`memories-nav-btn ${showNavButton ? 'visible' : ''}`}
                 onClick={handleNavigateToMemories}
               >
-                <span className="btn-icon">📸</span>
+                {/* <span className="btn-icon">📸</span> */}
                 <span className="btn-text">See Our Memories</span>
                 <span className="btn-heart">💞</span>
               </button>
@@ -348,7 +344,7 @@ Always yours. 💕`;
         {currentPage === 'memories' && (
           <div className="memories-screen">
             <div className="memories-header">
-              <span className="header-heart">📷</span>
+              {/* <span className="header-heart">📷</span> */}
               <h2 className="memories-title">Our Beautiful Memories</h2>
               <span className="header-heart">📷</span>
             </div>

@@ -324,30 +324,29 @@
 /* ===== MEMORIES GALLERY ===== */
 .memories-screen {
   width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5vh 2vh;
-  padding-bottom: 10vh;
+  padding: 3vh 1.5vh;
+  gap: 2vh;
 }
 
 .memories-title {
   font-family: var(--font-elegant);
-  font-size: clamp(1.5rem, 5vh, 3rem);
-  margin-bottom: 1vh;
-  margin-top: 3vh;
+  font-size: clamp(1.2rem, 4vh, 2.5rem);
+  margin-bottom: 0.5vh;
+  margin-top: 0vh;
 }
 
 .memories-subtitle {
-  font-size: clamp(0.8rem, 2vh, 1.1rem);
-  margin-bottom: 3vh;
+  font-size: clamp(0.7rem, 1.8vh, 1rem);
+  margin-bottom: 1vh;
 }
 
 .memories-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5vh;
+  gap: 1vh;
   width: 100%;
   max-width: 1000px;
   overflow: visible;
@@ -356,22 +355,24 @@
 .memory-photo-card {
   height: 100%;
   background: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  min-height: 0;
 }
 
 .memory-photo {
-  height: 20vh;
+  height: 12vh;
   width: 100%;
   background-size: cover;
   background-position: center;
   transition: transform 0.5s ease;
+  flex-shrink: 0;
 }
 
 .memory-details {
-  padding: 1.5vh;
+  padding: 1vh;
   background: rgba(255, 255, 255, 0.03);
   flex-grow: 1;
   display: flex;
@@ -381,24 +382,24 @@
 
 .memory-title {
   font-family: var(--font-elegant);
-  font-size: clamp(0.9rem, 2vh, 1.2rem);
-  margin-bottom: 0.5vh;
+  font-size: clamp(0.7rem, 1.8vh, 1rem);
+  margin-bottom: 0.3vh;
   text-align: center;
   color: var(--valentine-soft-pink);
 }
 
 .memory-date {
-  font-size: clamp(0.7rem, 1.5vh, 0.9rem);
+  font-size: clamp(0.6rem, 1.2vh, 0.8rem);
   text-align: center;
   opacity: 0.6;
-  margin-bottom: 1vh;
+  margin-bottom: 0.5vh;
 }
 
 .memory-caption {
-  font-size: clamp(0.7rem, 1.6vh, 1rem);
+  font-size: clamp(0.6rem, 1.3vh, 0.85rem);
   text-align: center;
   opacity: 0.9;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 .memory-card:hover .memory-photo {
@@ -494,24 +495,49 @@
 @media (max-width: 768px) {
   .memories-gallery {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.8vh;
+    max-width: 100%;
+    padding: 0 1vh;
   }
 
-  .memory-photo-card:nth-child(n+5) {
-    display: grid;
+  .memory-photo {
+    height: 10vh;
+  }
+
+  .memory-details {
+    padding: 0.8vh;
   }
 }
 
 @media (max-width: 480px) {
   .memories-gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .memory-photo-card:nth-child(n+3) {
-    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6vh;
+    max-width: 100%;
+    padding: 0 0.5vh;
   }
 
   .memory-photo {
-    height: 12vh;
+    height: 8vh;
+  }
+
+  .memory-details {
+    padding: 0.6vh;
+  }
+
+  .memory-title {
+    font-size: clamp(0.6rem, 1.6vh, 0.8rem);
+    margin-bottom: 0.2vh;
+  }
+
+  .memory-date {
+    font-size: clamp(0.5rem, 1vh, 0.7rem);
+    margin-bottom: 0.3vh;
+  }
+
+  .memory-caption {
+    font-size: clamp(0.5rem, 1.1vh, 0.7rem);
+    line-height: 1.2;
   }
 
   .love-letter-card {
