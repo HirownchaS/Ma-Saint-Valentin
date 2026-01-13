@@ -169,6 +169,13 @@
   z-index: 10;
 }
 
+/* Allow content wrapper to scroll on memories page */
+.memories-mode .content-wrapper {
+  height: auto;
+  min-height: 100vh;
+  align-items: flex-start;
+}
+
 /* ===== INITIAL SCREEN ===== */
 .initial-screen {
   text-align: center;
