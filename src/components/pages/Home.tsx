@@ -2,12 +2,12 @@
 import { useState, useEffect, useMemo } from 'react';
 import './Home.css';
 
-import Coffe from '../assets/images/coffee_date.png';
-import Beach from '../assets/images/beach_sunset.png';
-import Birthday from '../assets/images/birthday_surprise.png';
-import Rain from '../assets/images/rain_dance.png';
-import Christmas from '../assets/images/christmas.png';
-import NewYears from '../assets/images/new_years.png';
+import Coffee from '../../assets/images/coffee_date.png';
+import Beach from '../../assets/images/beach_sunset.png';
+import Birthday from '../../assets/images/birthday_surprise.png';
+import Rain from '../../assets/images/rain_dance.png';
+import Christmas from '../../assets/images/christmas.png';
+import NewYears from '../../assets/images/new_years.png';
 
 interface Particle {
   id: number;
@@ -49,7 +49,7 @@ const Home = () => {
       date: "March 15, 2024",
       caption: "That little café where we talked for hours... I knew right then you were special.",
       icon: "☕",
-      image: Coffe,
+      image: Coffee,
       className: "memory-photo-1"
     },
     {
