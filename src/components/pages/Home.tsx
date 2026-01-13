@@ -195,8 +195,10 @@ Always yours. 💖`;
   };
 
   const handleNoHover = () => {
-    const maxX = window.innerWidth / 3;
-    const maxY = window.innerHeight / 3;
+    // Reduce movement range on mobile to keep button within viewport
+    const moveFactor = window.innerWidth < 768 ? 0.2 : 0.4;
+    const maxX = window.innerWidth * moveFactor;
+    const maxY = window.innerHeight * moveFactor;
     const randomX = (Math.random() - 0.5) * maxX;
     const randomY = (Math.random() - 0.5) * maxY;
     setNoButtonPosition({ x: randomX, y: randomY });
