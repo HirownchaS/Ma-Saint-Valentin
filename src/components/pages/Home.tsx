@@ -2,6 +2,13 @@
 import { useState, useEffect, useMemo } from 'react';
 import './Home.css';
 
+import Coffee from '../../assets/images/coffee_date.png';
+import Beach from '../../assets/images/beach_sunset.png';
+import Birthday from '../../assets/images/birthday_surprise.png';
+import Rain from '../../assets/images/rain_dance.png';
+import Christmas from '../../assets/images/christmas.png';
+import NewYears from '../../assets/images/new_years.png';
+
 interface Particle {
   id: number;
   left: number;
@@ -42,7 +49,7 @@ const Home = () => {
       date: "March 15, 2024",
       caption: "That little café where we talked for hours... I knew right then you were special.",
       icon: "☕",
-      image: "../src/assets/images/coffee_date.png",
+      image: Coffee,
       className: "memory-photo-1"
     },
     {
@@ -51,7 +58,7 @@ const Home = () => {
       date: "June 8, 2024",
       caption: "Watching the sun dip into the ocean, your hand in mine. Pure magic.",
       icon: "🌅",
-      image: "../src/assets/images/beach_sunset.png",
+      image: Beach,
       className: "memory-photo-2"
     },
     {
@@ -60,7 +67,7 @@ const Home = () => {
       date: "August 22, 2024",
       caption: "The look on your face when you saw the balloons — I'll treasure it forever.",
       icon: "🎂",
-      image: "../src/assets/images/birthday_surprise.png",
+      image: Birthday,
       className: "memory-photo-3"
     },
     {
@@ -69,7 +76,7 @@ const Home = () => {
       date: "September 3, 2024",
       caption: "We got completely soaked, but your laughter made it the best day ever.",
       icon: "🌧️",
-      image: "../src/assets/images/rain_dance.png",
+      image: Rain,
       className: "memory-photo-4"
     },
     {
@@ -78,7 +85,7 @@ const Home = () => {
       date: "December 25, 2024",
       caption: "Hot cocoa, warm blankets, and your head on my shoulder. Perfect.",
       icon: "🎄",
-      image: "../src/assets/images/christmas.png",
+      image: Christmas,
       className: "memory-photo-5"
     },
     {
@@ -87,24 +94,16 @@ const Home = () => {
       date: "January 1, 2025",
       caption: "Starting a new year with you in my arms — my greatest blessing.",
       icon: "✨",
-      image: "../src/assets/images/new_years.png",
+      image: NewYears,
       className: "memory-photo-6"
     }
   ];
 
   const loveLetterContent = `To the one who holds my heart,
 
-From the very first moment our eyes met, I knew my life would never be the same. You walked into my world like a gentle breeze, and suddenly everything felt right.
+Your love is my greatest gift. You see me, stand by me, and make every moment special. I promise to love you more each day.
 
-Every morning I wake up grateful that you exist. Your smile is my sunrise, your laughter is my favorite melody, and your love... your love is the most precious gift I have ever received.
-
-You see me — truly see me — in ways no one else ever has. You hold my hand through storms and dance with me in the rain. You make ordinary moments feel extraordinary, and I fall deeper in love with you every single day.
-
-I don't need grand gestures or perfect words. I just need you — your warmth, your presence, your heart beating next to mine.
-
-Thank you for loving me the way you do. Thank you for being my home, my peace, my forever. I promise to cherish you, to protect your heart, and to love you more than yesterday but less than tomorrow.
-
-You are my everything. Today, tomorrow, and always.`;
+Always yours. 💖`;
 
   // Generate bokeh particles
   const bokehParticles = useMemo<Particle[]>(() => {
@@ -319,7 +318,7 @@ You are my everything. Today, tomorrow, and always.`;
               {/* Signature appears after typing */}
               <div className={`letter-signature ${showSignature ? 'visible' : ''}`}>
                 <p className="closing">With all my love,</p>
-                <p className="signature-name">[Your Name] 💕</p>
+                <p className="signature-name">Your Name 💕</p>
                 <p className="date">Valentine's Day 2026</p>
               </div>
             </div>
@@ -333,7 +332,7 @@ You are my everything. Today, tomorrow, and always.`;
                 className={`memories-nav-btn ${showNavButton ? 'visible' : ''}`}
                 onClick={handleNavigateToMemories}
               >
-                <span className="btn-icon">📸</span>
+                {/* <span className="btn-icon">📸</span> */}
                 <span className="btn-text">See Our Memories</span>
                 <span className="btn-heart">💞</span>
               </button>
@@ -345,7 +344,7 @@ You are my everything. Today, tomorrow, and always.`;
         {currentPage === 'memories' && (
           <div className="memories-screen">
             <div className="memories-header">
-              <span className="header-heart">📷</span>
+              {/* <span className="header-heart">📷</span> */}
               <h2 className="memories-title">Our Beautiful Memories</h2>
               <span className="header-heart">📷</span>
             </div>
